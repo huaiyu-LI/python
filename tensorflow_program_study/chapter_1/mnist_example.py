@@ -13,7 +13,9 @@ from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf
 import os
 
-path = os.getcwd()
+path = os.path.split(os.path.realpath(__file__))[0]
+
+# path = os.getcwd()
 data_path = os.path.join(path, 'MNIST_data/')
 
 
